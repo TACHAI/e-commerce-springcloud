@@ -8,12 +8,14 @@
         <outputRelativeToContentRoot value="true" />
         <module name="e-commerce-mvc-config" />
         <module name="e-commerce-common" />
+        <module name="e-commerce-admin" />
         <module name="e-commerce-alibaba-nacos-client" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="e-commerce-admin" options="-parameters" />
       <module name="e-commerce-alibaba-nacos-client" options="-parameters" />
       <module name="e-commerce-common" options="-parameters" />
       <module name="e-commerce-mvc-config" options="-parameters" />
