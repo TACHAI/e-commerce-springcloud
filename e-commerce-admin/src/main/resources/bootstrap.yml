@@ -6,6 +6,10 @@ server:
 spring:
   application:
     name: e-commerce-admin
+  security:
+    user:
+      name: laishishui
+      password: 123456
   cloud:
     nacos:
       discovery:
@@ -15,9 +19,20 @@ spring:
         metadata:
           management:
             context-path: ${server.servlet.context-path}/actuator
+          user.name: laishishui
+          user.password: 123456
   thymeleaf:
     check-template: false
     check-template-location: false
+  # 被监控的应用状态变更为 DOWN、OFFLINE、UNKNOW 时，会自动发出告警：实例的状态、原因、实例地址等信息
+#  boot:
+#    admin:
+#      notify:
+#        mail:
+#          from: ${spring.mail.username}
+#          to: 1206966083@qq.com
+#          # 抄送给谁
+#          cc:
 
 
 # 暴露端点

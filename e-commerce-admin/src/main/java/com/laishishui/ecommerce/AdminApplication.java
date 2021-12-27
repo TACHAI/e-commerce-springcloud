@@ -5,6 +5,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
+ * <h1>监控中心服务器入口</h1>
  * Create by tachai on 2021/12/26 8:08 下午
  * gitHub https://github.com/TACHAI
  * Email tc1206966083@gmail.com
