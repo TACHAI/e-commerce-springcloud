@@ -22,25 +22,31 @@
         <dependency>
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
-            <version>2.2.0.RELEASE</version>
+            <version>2.2.3.RELEASE</version>
         </dependency>
 
         <dependency>
             <groupId>de.codecentric</groupId>
-            <artifactId>spring-boot-admin-server</artifactId>
-            <version>2.5.5</version>
+            <artifactId>spring-boot-admin-starter-server</artifactId>
+            <version>2.2.0</version>
         </dependency>
 
-        <dependency>
-            <groupId>de.codecentric</groupId>
-            <artifactId>spring-boot-admin-server-ui</artifactId>
-            <version>2.5.5</version>
-        </dependency>
-        <dependency>
-            <groupId>de.codecentric</groupId>
-            <artifactId>spring-boot-admin-server-cloud</artifactId>
-            <version>2.5.5</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>de.codecentric</groupId>-->
+<!--            <artifactId>spring-boot-admin-server</artifactId>-->
+<!--            <version>2.5.5</version>-->
+<!--        </dependency>-->
+
+<!--        <dependency>-->
+<!--            <groupId>de.codecentric</groupId>-->
+<!--            <artifactId>spring-boot-admin-server-ui</artifactId>-->
+<!--            <version>2.5.5</version>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>de.codecentric</groupId>-->
+<!--            <artifactId>spring-boot-admin-server-cloud</artifactId>-->
+<!--            <version>2.5.5</version>-->
+<!--        </dependency>-->
         <dependency>
             <groupId>com.laishishui.ecommerce</groupId>
             <artifactId>e-commerce-mvc-config</artifactId>

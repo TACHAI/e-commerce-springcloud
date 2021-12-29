@@ -18,7 +18,7 @@ import reactor.core.publisher.Mono;
  */
 @Slf4j
 @Component
-@SuppressWarnings("all")
+//@SuppressWarnings("all")
 public class QinyiNotifier extends AbstractEventNotifier {
 
     protected QinyiNotifier(InstanceRepository repository) {
