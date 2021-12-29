@@ -6,7 +6,7 @@ package com.laishihui.ecommerce.constant;
  * gitHub https://github.com/TACHAI
  * Email tc1206966083@gmail.com
  */
-public final class CommonConstant {
+public  final class CommonConstant {
     /**RSA 公钥*/
     public  static final String PUBLIC_KEY= "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAyS/t/2HKOSp/DShpgykq" +
             "Rxddvx5YdF1rf9vbY+z0aJvYgmHwKJI4zXJ681Ou+qNueDfXZ4e1oKB6NBBpahRggS3pvOXFnbLNnlMQ+zys6JyIZ4oDF4O" +
@@ -15,7 +15,7 @@ public final class CommonConstant {
             "7nVNu+06AqhBcKojGhp9PzPc87jQ6IX+/5+WQIDAQAB";
 
     /**JWT 中存储用户信息的key */
-    public final String JWT_USER_INFO_KEY = "e-commerce-user";
+    public static final String JWT_USER_INFO_KEY = "e-commerce-user";
 
     /** 授权中心的 service-id */
     public static final String AUTHORITY_CENTER_SERVICE_ID= "ecommerce-authority-center";
