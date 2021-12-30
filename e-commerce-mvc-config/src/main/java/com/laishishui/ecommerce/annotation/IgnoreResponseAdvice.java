@@ -6,7 +6,6 @@ package com.laishishui.ecommerce.annotation;
  * Email tc1206966083@gmail.com
  */
 
-import org.w3c.dom.Element;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

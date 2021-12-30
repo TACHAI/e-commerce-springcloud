@@ -39,6 +39,7 @@
             <artifactId>e-commerce-mvc-config</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
+        <!--screw 生成数据库文档-->
         <dependency>
             <groupId>org.freemarker</groupId>
             <artifactId>freemarker</artifactId>

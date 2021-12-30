@@ -74,7 +74,7 @@ public class JWTServiceImpl implements IJWTService {
         Date expireDate =Date.from(zdt.toInstant());
         return Jwts.builder()
                 // jwt payload -->kv
-                .claim(CommonConstant.JWT_USER_INFO_KEY, JSON.toJSON(loginUserInfo))
+                .claim(CommonConstant.JWT_USER_INFO_KEY, JSON.toJSONString(loginUserInfo))
                 //jwt id
                 .setId(UUID.randomUUID().toString())
                 //jwt 过期时间
