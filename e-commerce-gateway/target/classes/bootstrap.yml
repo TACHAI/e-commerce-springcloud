@@ -1,0 +1,48 @@
+server:
+  port: 9000
+  servlet:
+    context-path: /laishishui
+
+spring:
+  application:
+    name: e-commerce-gateway
+  cloud:
+    nacos:
+      discovery:
+        enabled: true # 如果不想使用 Nacos 进行服务注册和发现，设置为false即可
+        server-addr: 127.0.0.1:8848
+        namespace: e829ba71-6d9c-4169-863a-2cc0b60cfbfc
+        metadata:
+          management:
+            context-path: ${server.servlet.context-path}/actuator
+
+
+  #静态路由
+#    gateway:
+#      routes:
+#        - id: path_route  #路由ID
+#          uri: 127.0.0.1:8080/user/{id}
+#          predicates:  #断言，路径相匹配的进行路由
+#           - Path=/user/{id}
+
+  main:
+    allow-bean-definition-overriding: true #因为将来会引入很多依赖，难免会有重名的bean
+
+# 这个地方独立配置，是网关的数据，代码GatewayConfig.java 中读取被监听
+nacos:
+  gateway:
+    route:
+      config:
+        data-id: e-commerce-gateway-router
+        group: e-commerce
+
+
+# 暴露端点
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always
