@@ -49,19 +49,12 @@ public class DynamicRouteServiceImplByNacos {
                 return;
             }
             // 通过Nacos Config 并指定路由配置去获取路由配置
-            String  configInfo="";
-            try {
-                configInfo = configService.getConfig(
-                        GatewayConfig.NACOS_ROUTE_DATA_ID,
-                        GatewayConfig.NACOS_ROUTE_GROUP,
-                        GatewayConfig.DEFAULT_TIMEOUT
-                );
-            }catch (Exception ex){
-                log.error("configService.getConfig: {}",ex.getMessage());
-
-            }
-            log.info("get current gateway config: [{}]", GatewayConfig.NACOS_ROUTE_DATA_ID);
-            log.info("get current gateway config: [{}]", GatewayConfig.NACOS_ROUTE_GROUP);
+            String configInfo = configService.getConfig(
+                    GatewayConfig.NACOS_ROUTE_DATA_ID,
+                    GatewayConfig.NACOS_ROUTE_GROUP,
+                    GatewayConfig.DEFAULT_TIMEOUT
+            );
+            log.info("get current gateway config: [{}]", configInfo);
             List<RouteDefinition> definitionList = JSON.parseArray(configInfo,RouteDefinition.class);
             if(!CollectionUtils.isEmpty(definitionList)){
                 for(RouteDefinition definition:definitionList){
@@ -88,7 +81,7 @@ public class DynamicRouteServiceImplByNacos {
             Properties properties = new Properties();
             log.info("GatewayConfig.NACOS_SERVER_ADDR :{}",GatewayConfig.NACOS_SERVER_ADDR);
             properties.setProperty("serverAddr", GatewayConfig.NACOS_SERVER_ADDR);
-            properties.setProperty("nameSpace",GatewayConfig.NACOS_NAMESPACE);
+            properties.setProperty("namespace",GatewayConfig.NACOS_NAMESPACE);
             return configService = NacosFactory.createConfigService(properties);
         } catch (Exception ex) {
             log.error("init gateway nacos config error: [{}]",ex.getMessage(),ex);

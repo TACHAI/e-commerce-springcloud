@@ -46,3 +46,21 @@ management:
   endpoint:
     health:
       show-details: always
+
+
+
+# nacos 路由 配置
+#  [
+#    {
+#      "id": "e-commerce-nacos-client",
+#      "predicates": [
+#        {
+#          "args": {
+#            "pattern": "/laishishui/ecommerce-nacos-client/**"
+#          },
+#          "name": "Path"
+#        }
+#      ],
+#      "uri": "lb://e-commerce-nacos-client"
+#    }
+#  ]
