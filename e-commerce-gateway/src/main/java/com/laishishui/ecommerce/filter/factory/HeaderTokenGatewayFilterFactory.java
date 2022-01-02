@@ -12,7 +12,7 @@ import org.springframework.stereotype.Component;
  * Email tc1206966083@gmail.com
  */
 @Component
-public class HeaderTokenAbstractGatewayFilterFactory extends AbstractGatewayFilterFactory<Object> {
+public class HeaderTokenGatewayFilterFactory extends AbstractGatewayFilterFactory<Object> {
     @Override
     public GatewayFilter apply(Object config) {
         return new HeaderTokenGatewayFilter();
