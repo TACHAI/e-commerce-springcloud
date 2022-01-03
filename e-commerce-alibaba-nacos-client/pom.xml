@@ -37,6 +37,12 @@
 <!--        </dependency>-->
 
         <!--微服务的方式 是用元数据的方式注册到nacos-->
+        <!--sleuth   链路追终-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-sleuth</artifactId>
+            <version>2.1.0.RELEASE</version>
+        </dependency>
     </dependencies>
 
     <build>
