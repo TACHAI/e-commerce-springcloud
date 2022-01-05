@@ -17,7 +17,11 @@ spring:
         metadata:
           management:
             context-path: ${server.servlet.context-path}/actuator
-
+  sleuth:
+    sampler:
+      # ProbabilityBaseSampler 抽样策略
+      probability: 1.0  # 采样比例，1.0 表示 100%，默认是0.1
+      rate: 100  #每秒间隔接受的 trace量
 # 暴露端点
 management:
   endpoints:

@@ -40,7 +40,7 @@
         <!--sleuth   链路追终-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-sleuth</artifactId>
+            <artifactId>spring-cloud-starter-zipkin</artifactId>
             <version>2.1.0.RELEASE</version>
         </dependency>
     </dependencies>
