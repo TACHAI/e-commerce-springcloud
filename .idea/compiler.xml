@@ -6,11 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="e-commerce-admin" />
+        <module name="e-commerce-service-config" />
         <module name="e-commerce-authority-center" />
         <module name="e-commerce-gateway" />
         <module name="e-commerce-mvc-config" />
         <module name="e-commerce-common" />
-        <module name="e-commerce-admin" />
         <module name="e-commerce-alibaba-nacos-client" />
       </profile>
     </annotationProcessing>
@@ -23,6 +24,8 @@
       <module name="e-commerce-common" options="-parameters" />
       <module name="e-commerce-gateway" options="-parameters" />
       <module name="e-commerce-mvc-config" options="-parameters" />
+      <module name="e-commerce-service" options="-parameters" />
+      <module name="e-commerce-service-config" options="-parameters" />
     </option>
   </component>
 </project>
