@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="e-commerce-service-sdk" />
         <module name="e-commerce-admin" />
         <module name="e-commerce-account-service" />
         <module name="e-commerce-service-config" />
@@ -28,6 +29,7 @@
       <module name="e-commerce-mvc-config" options="-parameters" />
       <module name="e-commerce-service" options="-parameters" />
       <module name="e-commerce-service-config" options="-parameters" />
+      <module name="e-commerce-service-sdk" options="-parameters" />
     </option>
   </component>
 </project>
