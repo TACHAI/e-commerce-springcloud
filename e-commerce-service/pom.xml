@@ -18,6 +18,7 @@
 
     <modules>
         <module>e-commerce-service-config</module>
+        <module>e-commerce-account-service</module>
     </modules>
 
 

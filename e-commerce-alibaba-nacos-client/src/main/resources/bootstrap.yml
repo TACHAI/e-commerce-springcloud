@@ -9,14 +9,14 @@ spring:
     name: e-commerce-nacos-client #应用名称也是构成Nacos配置管理dataId字段的一部分
   cloud:
     nacos:
-      # 服务注册发现
-      discovery:
-        enabled: true
-        server-addr: 127.0.0.1:8848
-        namespace: e829ba71-6d9c-4169-863a-2cc0b60cfbfc
-        metadata:
-          management:
-            context-path: ${server.servlet.context-path}/actuator
+    # 服务注册发现
+        discovery:
+          enabled: true
+          server-addr: 127.0.0.1:8848
+          namespace: e829ba71-6d9c-4169-863a-2cc0b60cfbfc
+          metadata:
+            management:
+              context-path: ${server.servlet.context-path}/actuator
   sleuth:
     sampler:
       # ProbabilityBaseSampler 抽样策略
