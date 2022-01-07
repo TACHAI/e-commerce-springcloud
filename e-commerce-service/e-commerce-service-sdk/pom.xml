@@ -15,6 +15,6 @@
 
     <!--模块名及描述信息-->
     <name>e-commerce-service-sdk</name>
-    <description>服务模块 SDK</description>
+    <description>服务模块 SDK  微服务模块需要使用值对象（vo）</description>
 
 </project>

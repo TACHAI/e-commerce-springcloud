@@ -36,7 +36,7 @@ public class EcommerceAddress {
      * 用户id
      */
     @Column(name="user_id",nullable = false)
-    private long userId;
+    private Long userId;
 
     @Column(name = "username",nullable = false)
     private String username;
