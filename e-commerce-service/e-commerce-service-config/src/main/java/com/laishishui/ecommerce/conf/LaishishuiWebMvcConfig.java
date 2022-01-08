@@ -14,7 +14,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupp
  * Email tc1206966083@gmail.com
  */
 @Configuration
-public class ImoocWebMvcConfig extends WebMvcConfigurationSupport {
+public class LaishishuiWebMvcConfig extends WebMvcConfigurationSupport {
 
 
     /**
@@ -37,8 +37,8 @@ public class ImoocWebMvcConfig extends WebMvcConfigurationSupport {
 
         registry.addResourceHandler("/**")
                 .addResourceLocations("classpath:/static/");
-        registry.addResourceHandler("swagger-ui.html").
-                addResourceLocations("classpath:/META-INF/resource");
+        registry.addResourceHandler("swagger-ui.html")
+                .addResourceLocations("classpath:/META-INF/resource");
         registry.addResourceHandler("doc.html")
                 .addResourceLocations("classpath:/META-INF/resource");
         registry.addResourceHandler("/webjars/**")
