@@ -8,6 +8,7 @@
     <file url="file://$PROJECT_DIR$/e-commerce-gateway/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/e-commerce-mvc-config/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/e-commerce-service/e-commerce-account-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/e-commerce-service/e-commerce-goods-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/e-commerce-service/e-commerce-service-config/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/e-commerce-service/e-commerce-service-sdk/src/main/java" charset="UTF-8" />
   </component>
