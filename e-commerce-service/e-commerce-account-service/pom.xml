@@ -18,11 +18,16 @@
     <description>账户服务</description>
 
     <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
         <!-- spring cloud alibaba nacos discovery 依赖-->
         <dependency>
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
         </dependency>
+
         <!-- zipkin-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
@@ -44,6 +49,11 @@
             <artifactId>mysql-connector-java</artifactId>
             <version>8.0.12</version>
             <scope>runtime</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.laishishui.ecommerce</groupId>
+            <artifactId>e-commerce-common</artifactId>
+            <version>1.0-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>com.laishishui.ecommerce</groupId>

@@ -1,6 +1,7 @@
 package com.laishishui.ecommerce.conf;
 
-import com.laishishui.ecommerce.filter.LoginUserInfoIntercepor;
+import com.laishishui.ecommerce.filter.LoginUserInfoInterceptor;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
@@ -13,6 +14,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupp
  * gitHub https://github.com/TACHAI
  * Email tc1206966083@gmail.com
  */
+@ComponentScan
 @Configuration
 public class LaishishuiWebMvcConfig extends WebMvcConfigurationSupport {
 
@@ -24,7 +26,7 @@ public class LaishishuiWebMvcConfig extends WebMvcConfigurationSupport {
     @Override
     protected void addInterceptors(InterceptorRegistry registry) {
         // 添加用户身份统一登录拦截的拦截器
-        registry.addInterceptor(new LoginUserInfoIntercepor())
+        registry.addInterceptor(new LoginUserInfoInterceptor())
                 .addPathPatterns("/**").order(0);
     }
 

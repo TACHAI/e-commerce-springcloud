@@ -21,7 +21,7 @@ import javax.servlet.http.HttpServletResponse;
  */
 @Slf4j
 @Component
-public class LoginUserInfoIntercepor implements HandlerInterceptor {
+public class LoginUserInfoInterceptor implements HandlerInterceptor {
 
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {

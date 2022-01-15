@@ -30,6 +30,7 @@ public class SwaggerConfig {
     @Bean
     public Docket docket(){
         return new Docket(DocumentationType.SWAGGER_2)
+                .enable(true)
                 // 展示在 Swagger 页面上的自定义工程描述信息
                 .apiInfo(apiInfo())
                 // 选择展示哪些接口
