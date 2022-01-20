@@ -5,6 +5,7 @@ import com.laishishui.ecommerce.constant.BrandCategory;
 import com.laishishui.ecommerce.constant.GoodsCategory;
 import com.laishishui.ecommerce.constant.GoodsStatus;
 import com.laishishui.ecommerce.converter.BrandCategoryConverter;
+import com.laishishui.ecommerce.converter.GoodsCategoryConverter;
 import com.laishishui.ecommerce.converter.GoodsStatusConverter;
 import com.laishishui.ecommerce.goods.GoodsInfo;
 import com.laishishui.ecommerce.goods.SimpleGoodsInfo;
@@ -39,7 +40,7 @@ public class EcommerceGoods {
 
     /**商品类型*/
     @Column(name = "goods_category",nullable = false)
-    @Convert(converter = GoodsCategory.class)
+    @Convert(converter = GoodsCategoryConverter.class)
     private GoodsCategory goodsCategory;
 
     /** 品牌分类*/
@@ -53,7 +54,7 @@ public class EcommerceGoods {
 
 
     /**商品图片*/
-    @Column(name = "good_pic",nullable = false)
+    @Column(name = "goods_pic",nullable = false)
     private String goodsPic;
 
     /**商品描述信息*/
@@ -105,7 +106,7 @@ public class EcommerceGoods {
         ecommerceGoods.setGoodsStatus(GoodsStatus.ONLINE); //这里增加审核 流程
         ecommerceGoods.setPrice(goodsInfo.getPrice());
         ecommerceGoods.setSupply(goodsInfo.getSupply());
-        ecommerceGoods.setInventory(goodsInfo.getInventory());
+        ecommerceGoods.setInventory(goodsInfo.getSupply());
         ecommerceGoods.setGoodsProperty(JSON.toJSONString(goodsInfo.getGoodsProperty()));
         return ecommerceGoods;
     }

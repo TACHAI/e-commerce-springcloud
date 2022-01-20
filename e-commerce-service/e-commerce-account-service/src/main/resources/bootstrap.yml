@@ -1,35 +1,35 @@
 server:
   port: 8003
-#  servlet:
-#    context-path: /ecommerce-account-service
+  servlet:
+    context-path: /ecommerce-account-service
 
 spring:
   application:
     name: e-commerce-account-service
-#  cloud:
-#    nacos:
-#      # 服务注册发现
-#      discovery:
-#        enabled: true
-#        server-addr: 127.0.0.1:8848
-#        namespace: e829ba71-6d9c-4169-863a-2cc0b60cfbfc
-#        metadata:
-#          management:
-#            context-path: ${server.servlet.context-path}/actuator
-#
-#  kafka:
-#    bootstrap-servers: 127.0.0.1:9092
-#    producer:
-#      retries: 3
-#    consumer:
-#      auto-offset-reset: latest
-#  sleuth:
-#    sampler:
-#      probability: 1.0 #采样比例，1.0表示 100%，默认是0.1
-#  zipkin:
-#    sender:
-#      type: kafka #默认是 web
-#    base-url: http://localhost:9411/
+  cloud:
+    nacos:
+      # 服务注册发现
+      discovery:
+        enabled: true
+        server-addr: 127.0.0.1:8848
+        namespace: e829ba71-6d9c-4169-863a-2cc0b60cfbfc
+        metadata:
+          management:
+            context-path: ${server.servlet.context-path}/actuator
+
+  kafka:
+    bootstrap-servers: 127.0.0.1:9092
+    producer:
+      retries: 3
+    consumer:
+      auto-offset-reset: latest
+  sleuth:
+    sampler:
+      probability: 1.0 #采样比例，1.0表示 100%，默认是0.1
+  zipkin:
+    sender:
+      type: kafka #默认是 web
+    base-url: http://localhost:9411/
   jpa:
     show-sql: true
     hibernate:
@@ -55,12 +55,12 @@ spring:
       auto-commit: true
       pool-name: LaishishuiEconmmerceHikariCP
 
-## 暴露端点
-#management:
-#  endpoints:
-#    web:
-#      exposure:
-#        include: '*'
-#  endpoint:
-#    health:
-#      show-details: always
+# 暴露端点
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always
