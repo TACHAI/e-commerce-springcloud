@@ -5,14 +5,12 @@ import com.laishihui.ecommerce.constant.CommonConstant;
 import com.laishihui.ecommerce.vo.JwtToken;
 import com.laishihui.ecommerce.vo.UsernameAndPassword;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.loadbalancer.LoadBalancerClient;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Service;
-import org.springframework.util.MultiValueMap;
 import org.springframework.web.client.RestTemplate;
 
 /**

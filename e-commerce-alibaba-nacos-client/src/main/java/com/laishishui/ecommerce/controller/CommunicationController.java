@@ -1,8 +1,11 @@
 package com.laishishui.ecommerce.controller;
 
+import com.alibaba.fastjson.JSONObject;
 import com.laishihui.ecommerce.vo.JwtToken;
 import com.laishihui.ecommerce.vo.UsernameAndPassword;
 import com.laishishui.ecommerce.service.communication.UseRestTemplateService;
+import com.laishishui.ecommerce.service.communication.UseRibbonService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -18,10 +21,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/communication")
 public class CommunicationController {
 
+    private final UseRibbonService useRibbonService;
     private final UseRestTemplateService useRestTemplateService;
 
-    public CommunicationController(UseRestTemplateService useRestTemplateService) {
+    public CommunicationController(UseRestTemplateService useRestTemplateService, UseRibbonService useRibbonService) {
         this.useRestTemplateService = useRestTemplateService;
+        this.useRibbonService = useRibbonService;
     }
 
     @PostMapping("/rest-template")
@@ -33,5 +38,15 @@ public class CommunicationController {
     @PostMapping("/rest-template-load-balance")
     public JwtToken getTokenFromAuthorityServiceWithLoadBalance(@RequestBody UsernameAndPassword usernameAndPassword){
         return useRestTemplateService.getTokenFromAuthorityServiceWithLoadBalance(usernameAndPassword);
+    }
+
+    @PostMapping("/ribbon")
+    public JwtToken getTokenFromAuthorityServiceByRibbon(@RequestBody UsernameAndPassword usernameAndPassword){
+        return useRibbonService.getTokenFromAuthorityServiceByRibbon(usernameAndPassword);
+    }
+
+    @PostMapping("/thinking-in-ribbon")
+    public JwtToken thinkingInRibbon(@RequestBody UsernameAndPassword usernameAndPassword){
+        return useRibbonService.thinkingInRibbon(usernameAndPassword);
     }
 }
