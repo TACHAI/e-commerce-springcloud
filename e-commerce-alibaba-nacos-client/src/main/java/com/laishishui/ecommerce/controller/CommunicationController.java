@@ -3,6 +3,7 @@ package com.laishishui.ecommerce.controller;
 import com.alibaba.fastjson.JSONObject;
 import com.laishihui.ecommerce.vo.JwtToken;
 import com.laishihui.ecommerce.vo.UsernameAndPassword;
+import com.laishishui.ecommerce.service.communication.AuthorityFeignClient;
 import com.laishishui.ecommerce.service.communication.UseRestTemplateService;
 import com.laishishui.ecommerce.service.communication.UseRibbonService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,13 +21,15 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/communication")
 public class CommunicationController {
+    private final AuthorityFeignClient authorityFeignClient;
 
     private final UseRibbonService useRibbonService;
     private final UseRestTemplateService useRestTemplateService;
 
-    public CommunicationController(UseRestTemplateService useRestTemplateService, UseRibbonService useRibbonService) {
+    public CommunicationController(UseRestTemplateService useRestTemplateService, UseRibbonService useRibbonService, AuthorityFeignClient authorityFeignClient) {
         this.useRestTemplateService = useRestTemplateService;
         this.useRibbonService = useRibbonService;
+        this.authorityFeignClient = authorityFeignClient;
     }
 
     @PostMapping("/rest-template")
@@ -48,5 +51,10 @@ public class CommunicationController {
     @PostMapping("/thinking-in-ribbon")
     public JwtToken thinkingInRibbon(@RequestBody UsernameAndPassword usernameAndPassword){
         return useRibbonService.thinkingInRibbon(usernameAndPassword);
+    }
+
+    @PostMapping("/token-by-feign")
+    public JwtToken getTokenByFeign(@RequestBody UsernameAndPassword usernameAndPassword){
+        return authorityFeignClient.getTokenByFegin(usernameAndPassword);
     }
 }
