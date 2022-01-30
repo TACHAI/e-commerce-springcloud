@@ -2,6 +2,7 @@ package com.laishishui.ecommerce.controller;
 
 import com.alibaba.fastjson.JSON;
 import com.laishishui.ecommerce.service.NacosClientService;
+import com.laishishui.ecommerce.service.hystrix.CacheHystrixCommandAnnotation;
 import com.laishishui.ecommerce.service.hystrix.NacosClientHystrixCommand;
 import com.laishishui.ecommerce.service.hystrix.NacosClientHystrixObservableCommand;
 import com.laishishui.ecommerce.service.hystrix.UseHystrixCommandAnnotation;
@@ -34,9 +35,12 @@ public class HystrixController {
     private final NacosClientService nacosClientService;
     private final UseHystrixCommandAnnotation hystrixCommandAnnotation;
 
-    public HystrixController(UseHystrixCommandAnnotation hystrixCommandAnnotation, NacosClientService nacosClientService) {
+    private final CacheHystrixCommandAnnotation cacheHystrixCommandAnnotation;
+
+    public HystrixController(UseHystrixCommandAnnotation hystrixCommandAnnotation, NacosClientService nacosClientService, CacheHystrixCommandAnnotation cacheHystrixCommandAnnotation) {
         this.hystrixCommandAnnotation = hystrixCommandAnnotation;
         this.nacosClientService = nacosClientService;
+        this.cacheHystrixCommandAnnotation = cacheHystrixCommandAnnotation;
     }
 
     @GetMapping("/hystrix-command-annotation")
@@ -117,5 +121,12 @@ public class HystrixController {
 
         log.info("obserable command result is:[{}],[{}]",JSON.toJSONString(result),Thread.currentThread().getName());
         return result.get(0);
+    }
+
+    @GetMapping("/cache-annotation-01")
+    public List<ServiceInstance> useCacheByAnnantation02(@RequestParam String serviceId){
+        log.info("user cache by annotation01(controller) to get nacos client info:[{}]",serviceId);
+        List<ServiceInstance> result01 = cacheHystrixCommandAnnotation.useCacheByAnnotation01(serviceId);
+        return result01;
     }
 }
