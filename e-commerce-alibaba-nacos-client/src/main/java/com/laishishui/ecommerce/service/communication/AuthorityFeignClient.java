@@ -2,6 +2,7 @@ package com.laishishui.ecommerce.service.communication;
 
 import com.laishihui.ecommerce.vo.JwtToken;
 import com.laishihui.ecommerce.vo.UsernameAndPassword;
+import com.laishishui.ecommerce.service.communication.hystrix.AuthorityFeignClientFallback;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -13,7 +14,11 @@ import org.springframework.web.bind.annotation.RequestMethod;
  * gitHub https://github.com/TACHAI
  * Email tc1206966083@gmail.com
  */
-@FeignClient(contextId = "AuthorityFeignClient",value = "e-commerce-authority-center")
+@FeignClient(contextId = "AuthorityFeignClient",
+        value = "e-commerce-authority-center",
+//        fallback = AuthorityFeignClientFallback.class
+        fallbackFactory = AuthorityFeignClientFallback.class
+)
 public interface AuthorityFeignClient {
 
     /**

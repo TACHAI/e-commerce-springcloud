@@ -39,6 +39,8 @@ feign:
     enabled: false
   okhttp:
     enabled: true
+  hystrix:
+    enabled: true
 # 暴露端点
 management:
   endpoints:
