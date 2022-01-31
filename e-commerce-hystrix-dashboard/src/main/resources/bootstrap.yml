@@ -1,0 +1,34 @@
+server:
+  port: 9999
+  servlet:
+    context-path: /ecommerce-hystrix-dashboard
+
+
+spring:
+  application:
+    name: e-commerce-hystrix-dashboard #应用名称也是构成Nacos配置管理dataId字段的一部分
+  cloud:
+    nacos:
+      # 服务注册发现
+      discovery:
+        enabled: true
+        server-addr: 127.0.0.1:8848
+        namespace: e829ba71-6d9c-4169-863a-2cc0b60cfbfc
+        metadata:
+          management:
+            context-path: ${server.servlet.context-path}/actuator
+
+hystrix:
+  dashboard:
+    proxy-stream-allow-list: "127.0.0.1"
+
+
+# 暴露端点
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always
