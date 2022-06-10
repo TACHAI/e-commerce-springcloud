@@ -1,21 +1,18 @@
 package com.laishishui.ecommerce.service.communication;
 
 import com.alibaba.fastjson.JSON;
-import com.laishihui.ecommerce.constant.CommonConstant;
-import com.laishihui.ecommerce.vo.JwtToken;
-import com.laishihui.ecommerce.vo.UsernameAndPassword;
+import com.laishishui.ecommerce.constant.CommonConstant;
+import com.laishishui.ecommerce.vo.JwtToken;
+import com.laishishui.ecommerce.vo.UsernameAndPassword;
 import com.netflix.loadbalancer.*;
 import com.netflix.loadbalancer.reactive.LoadBalancerCommand;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
-import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Service;
-import org.springframework.util.MultiValueMap;
 import org.springframework.web.client.RestTemplate;
 import rx.Observable;
 

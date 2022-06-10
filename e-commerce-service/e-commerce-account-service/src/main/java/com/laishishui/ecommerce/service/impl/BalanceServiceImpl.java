@@ -1,6 +1,6 @@
 package com.laishishui.ecommerce.service.impl;
 
-import com.laishihui.ecommerce.vo.LoginUserInfo;
+import com.laishishui.ecommerce.vo.LoginUserInfo;
 import com.laishishui.ecommerce.account.BalanceInfo;
 import com.laishishui.ecommerce.dao.EcommerceBalanceDao;
 import com.laishishui.ecommerce.entity.EcommerceBalance;

@@ -12,9 +12,9 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
  * gitHub https://github.com/TACHAI
  * Email tc1206966083@gmail.com
  */
-@EnableCircuitBreaker  //启动Hystrix
-@EnableFeignClients
-@RefreshScope    //刷新配置
+//@EnableCircuitBreaker  //启动Hystrix
+//@EnableFeignClients
+//@RefreshScope    //刷新配置
 @EnableDiscoveryClient
 @SpringBootApplication
 public class NacosClientApplication {

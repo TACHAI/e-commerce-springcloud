@@ -25,6 +25,11 @@ spring:
     check-template: false
     check-template-location: false
   # 被监控的应用状态变更为 DOWN、OFFLINE、UNKNOW 时，会自动发出告警：实例的状态、原因、实例地址等信息
+#  mail:
+#    host:
+#    username:
+#    password:
+#    default-encoding: utf-8
 #  boot:
 #    admin:
 #      notify:

@@ -1,4 +1,4 @@
-package com.laishihui.ecommerce.vo;
+package com.laishishui.ecommerce.vo;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

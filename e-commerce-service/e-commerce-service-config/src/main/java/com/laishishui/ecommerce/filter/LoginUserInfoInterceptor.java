@@ -1,14 +1,13 @@
 package com.laishishui.ecommerce.filter;
 
-import com.laishihui.ecommerce.constant.CommonConstant;
-import com.laishihui.ecommerce.util.TokenParseUtil;
-import com.laishihui.ecommerce.vo.LoginUserInfo;
+import com.laishishui.ecommerce.constant.CommonConstant;
+import com.laishishui.ecommerce.util.TokenParseUtil;
+import com.laishishui.ecommerce.vo.LoginUserInfo;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
-import org.springframework.web.servlet.resource.ResourceHttpRequestHandler;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -31,6 +30,8 @@ public class LoginUserInfoInterceptor implements HandlerInterceptor {
 
         // 部分请求不需要带有身份信息，即白名单
         if(checkWhiteListUrl(request.getRequestURI())){
+            log.info("拦截器执行了白名单：2");
+
             return true;
         }
 

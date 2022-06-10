@@ -1,6 +1,6 @@
 package com.laishishui.ecommerce.service;
 
-import com.laishihui.ecommerce.vo.UsernameAndPassword;
+import com.laishishui.ecommerce.vo.UsernameAndPassword;
 
 /**
  * <h1> JWT相关服务接口定义</h1>

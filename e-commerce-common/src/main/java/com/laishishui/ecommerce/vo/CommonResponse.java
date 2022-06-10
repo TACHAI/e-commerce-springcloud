@@ -1,4 +1,4 @@
-package com.laishihui.ecommerce.vo;
+package com.laishishui.ecommerce.vo;
 
 /**
  * Create by tachai on 2021/12/25 9:21 下午

@@ -1,0 +1,44 @@
+### 创建用户地址信息
+POST http://127.0.0.1:9000/laishishui/ecommerce-account-service/address/create-address
+Content-Type: application/json
+e-commerce-user: eyJhbGciOiJSUzI1NiJ9.eyJlLWNvbW1lcmNlLXVzZXIiOiJ7XCJpZFwiOjEsXCJ1c2VybmFtZVwiOlwi5byg5LiJXCJ9IiwianRpIjoiYTM5OWJjM2MtYWFmMC00OWExLWEzYmUtNTI1ZjVlZGQ4ODI3IiwiZXhwIjoxNjU0NzkwNDAwfQ.maCv5C-zFaJZ_Qwk1dwSOczrWJYUOewDnAxjhCW4AUt5NmEmxxrI_LrTay2i3f49zUuQZRcaBPpkdKSK0GDT5gp5t_TPd0Ff1JRXRsAREOFF0F_F9B-CAYqjQyRGIrMj47EOydUD6QSBS4PP7WiIO4wPWIDdfbdv_eBvhn_yWhONt8z9D-RIas1ZXFi1CTZgj3tLcNs88P-PEdaUQgXiV7DQBx_3iaukB3qaaLGSEuIn6mv_1VIsmPgBzAIim2hH5EGlUymsjSRbOBQMMIL_bkaoiU-5lq2qQ-9MbG-rLq7JYrHq0giSkITIcKHzFfGlnPPfpkJ2HxZki16J_L6uyg
+
+{
+  "userId": 2,
+  "addressItems": [
+    {
+      "username": "tachai",
+      "phone": "123213123",
+      "province": "上海",
+      "city": "浦东",
+      "addressDetail": "闵行区"
+    }
+  ]
+}
+
+
+### 当前登录用户地址信息
+GET http://127.0.0.1:9000/laishishui/ecommerce-account-service/address/current-address
+Accept: application/json
+e-commerce-user: eyJhbGciOiJSUzI1NiJ9.eyJlLWNvbW1lcmNlLXVzZXIiOiJ7XCJpZFwiOjEsXCJ1c2VybmFtZVwiOlwi5byg5LiJXCJ9IiwianRpIjoiYTM5OWJjM2MtYWFmMC00OWExLWEzYmUtNTI1ZjVlZGQ4ODI3IiwiZXhwIjoxNjU0NzkwNDAwfQ.maCv5C-zFaJZ_Qwk1dwSOczrWJYUOewDnAxjhCW4AUt5NmEmxxrI_LrTay2i3f49zUuQZRcaBPpkdKSK0GDT5gp5t_TPd0Ff1JRXRsAREOFF0F_F9B-CAYqjQyRGIrMj47EOydUD6QSBS4PP7WiIO4wPWIDdfbdv_eBvhn_yWhONt8z9D-RIas1ZXFi1CTZgj3tLcNs88P-PEdaUQgXiV7DQBx_3iaukB3qaaLGSEuIn6mv_1VIsmPgBzAIim2hH5EGlUymsjSRbOBQMMIL_bkaoiU-5lq2qQ-9MbG-rLq7JYrHq0giSkITIcKHzFfGlnPPfpkJ2HxZki16J_L6uyg
+
+### 通过 id 获取用户地址信息
+GET http://127.0.0.1:9000/laishishui/ecommerce-account-service/address/address-info?id=2
+Accept: application/json
+e-commerce-user: eyJhbGciOiJSUzI1NiJ9.eyJlLWNvbW1lcmNlLXVzZXIiOiJ7XCJpZFwiOjEsXCJ1c2VybmFtZVwiOlwi5byg5LiJXCJ9IiwianRpIjoiYTM5OWJjM2MtYWFmMC00OWExLWEzYmUtNTI1ZjVlZGQ4ODI3IiwiZXhwIjoxNjU0NzkwNDAwfQ.maCv5C-zFaJZ_Qwk1dwSOczrWJYUOewDnAxjhCW4AUt5NmEmxxrI_LrTay2i3f49zUuQZRcaBPpkdKSK0GDT5gp5t_TPd0Ff1JRXRsAREOFF0F_F9B-CAYqjQyRGIrMj47EOydUD6QSBS4PP7WiIO4wPWIDdfbdv_eBvhn_yWhONt8z9D-RIas1ZXFi1CTZgj3tLcNs88P-PEdaUQgXiV7DQBx_3iaukB3qaaLGSEuIn6mv_1VIsmPgBzAIim2hH5EGlUymsjSRbOBQMMIL_bkaoiU-5lq2qQ-9MbG-rLq7JYrHq0giSkITIcKHzFfGlnPPfpkJ2HxZki16J_L6uyg
+
+### 获取用户地址信息
+POST http://127.0.0.1:9000/laishishui/ecommerce-account-service/address/address-info-by-table-id
+Content-Type: application/json
+e-commerce-user: eyJhbGciOiJSUzI1NiJ9.eyJlLWNvbW1lcmNlLXVzZXIiOiJ7XCJpZFwiOjEsXCJ1c2VybmFtZVwiOlwi5byg5LiJXCJ9IiwianRpIjoiYTM5OWJjM2MtYWFmMC00OWExLWEzYmUtNTI1ZjVlZGQ4ODI3IiwiZXhwIjoxNjU0NzkwNDAwfQ.maCv5C-zFaJZ_Qwk1dwSOczrWJYUOewDnAxjhCW4AUt5NmEmxxrI_LrTay2i3f49zUuQZRcaBPpkdKSK0GDT5gp5t_TPd0Ff1JRXRsAREOFF0F_F9B-CAYqjQyRGIrMj47EOydUD6QSBS4PP7WiIO4wPWIDdfbdv_eBvhn_yWhONt8z9D-RIas1ZXFi1CTZgj3tLcNs88P-PEdaUQgXiV7DQBx_3iaukB3qaaLGSEuIn6mv_1VIsmPgBzAIim2hH5EGlUymsjSRbOBQMMIL_bkaoiU-5lq2qQ-9MbG-rLq7JYrHq0giSkITIcKHzFfGlnPPfpkJ2HxZki16J_L6uyg
+
+{
+  "ids": [
+    {
+      "id": 1
+    },
+    {
+      "id": 2
+    }
+  ]
+}

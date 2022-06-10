@@ -1,7 +1,7 @@
 package com.laishishui.ecommerce.service.impl;
 
 import com.alibaba.fastjson.JSON;
-import com.laishihui.ecommerce.vo.LoginUserInfo;
+import com.laishishui.ecommerce.vo.LoginUserInfo;
 import com.laishishui.ecommerce.account.AddressInfo;
 import com.laishishui.ecommerce.common.TableId;
 import com.laishishui.ecommerce.dao.EcommerceAddressDao;

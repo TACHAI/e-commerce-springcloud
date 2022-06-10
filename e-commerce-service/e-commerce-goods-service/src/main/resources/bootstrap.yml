@@ -60,7 +60,7 @@ spring:
     host: 127.0.0.1
     port: 6379
     # password
-    # 连接超时时间
+    # 连接超时时间 单位是毫秒
     timeout: 10000
 
 # 暴露端点

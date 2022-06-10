@@ -17,30 +17,41 @@ spring:
           metadata:
             management:
               context-path: ${server.servlet.context-path}/actuator
+  kafka:
+    bootstrap-servers: 127.0.0.1:9092
+    producer:
+      retries: 3
+    consumer:
+      auto-offset-reset: latest
   sleuth:
     sampler:
-      # ProbabilityBaseSampler 抽样策略
-      probability: 1.0  # 采样比例，1.0 表示 100%，默认是0.1
-      rate: 100  #每秒间隔接受的 trace量
+      # ProbabilityBasedSampler 抽样策略
+      probability: 1.0  # 采样比例, 1.0 表示 100%, 默认是 0.1
+      # RateLimitingSampler 抽样策略, 设置了限速采集, spring.sleuth.sampler.probability 属性值无效
+      rate: 100  # 每秒间隔接受的 trace 量
+  zipkin:
+    sender:
+      type: kafka # 默认是 web
+    base-url: http://localhost:9411/
 
 
-# Feign的相关配置
-feign:
-  # feign开启zip压缩
-  compression:
-    request:
-      enabled: true
-      mime-types: text/xml,application/xml,application/json
-      min-request-size: 1024
-    response:
-      enabled: true
-  # 禁用原生的http
-  httpclient:
-    enabled: false
-  okhttp:
-    enabled: true
-  hystrix:
-    enabled: true
+## Feign的相关配置
+#feign:
+#  # feign开启zip压缩
+#  compression:
+#    request:
+#      enabled: true
+#      mime-types: text/xml,application/xml,application/json
+#      min-request-size: 1024
+#    response:
+#      enabled: true
+#  # 禁用原生的http
+#  httpclient:
+#    enabled: false
+#  okhttp:
+#    enabled: true
+#  hystrix:
+#    enabled: true
 # 暴露端点
 management:
   endpoints:

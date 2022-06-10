@@ -1,7 +1,7 @@
 package com.laishishui.ecommerce.service.communication.hystrix;
 
-import com.laishihui.ecommerce.vo.JwtToken;
-import com.laishihui.ecommerce.vo.UsernameAndPassword;
+import com.laishishui.ecommerce.vo.JwtToken;
+import com.laishishui.ecommerce.vo.UsernameAndPassword;
 import com.laishishui.ecommerce.service.communication.AuthorityFeignClient;
 import feign.hystrix.FallbackFactory;
 import lombok.extern.slf4j.Slf4j;

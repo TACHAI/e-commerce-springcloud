@@ -1,0 +1,8 @@
+### 登录
+POST 127.0.0.1:9000/laishishui/e-commerce/login
+Content-Type: application/json
+
+{
+   "username": "张三",
+  "password": "e10adc3949ba59abbe56e057f20f883e"
+}

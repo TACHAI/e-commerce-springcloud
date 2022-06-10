@@ -1,8 +1,8 @@
-package com.laishihui.ecommerce.util;
+package com.laishishui.ecommerce.util;
 
 import com.alibaba.fastjson.JSON;
-import com.laishihui.ecommerce.constant.CommonConstant;
-import com.laishihui.ecommerce.vo.LoginUserInfo;
+import com.laishishui.ecommerce.constant.CommonConstant;
+import com.laishishui.ecommerce.vo.LoginUserInfo;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jws;
 import io.jsonwebtoken.Jwts;

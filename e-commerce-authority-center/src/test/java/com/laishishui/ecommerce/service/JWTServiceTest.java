@@ -1,8 +1,8 @@
 package com.laishishui.ecommerce.service;
 
 import com.alibaba.fastjson.JSON;
-import com.laishihui.ecommerce.util.TokenParseUtil;
-import com.laishihui.ecommerce.vo.LoginUserInfo;
+import com.laishishui.ecommerce.util.TokenParseUtil;
+import com.laishishui.ecommerce.vo.LoginUserInfo;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 import org.junit.runner.RunWith;

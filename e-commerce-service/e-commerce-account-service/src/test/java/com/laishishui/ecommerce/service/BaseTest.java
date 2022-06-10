@@ -1,6 +1,6 @@
 package com.laishishui.ecommerce.service;
 
-import com.laishihui.ecommerce.vo.LoginUserInfo;
+import com.laishishui.ecommerce.vo.LoginUserInfo;
 import com.laishishui.ecommerce.filter.AccessContext;
 import org.junit.After;
 import org.junit.Before;

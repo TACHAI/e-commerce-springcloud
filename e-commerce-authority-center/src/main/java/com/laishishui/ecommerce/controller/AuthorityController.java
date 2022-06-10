@@ -1,8 +1,8 @@
 package com.laishishui.ecommerce.controller;
 
 import com.alibaba.fastjson.JSON;
-import com.laishihui.ecommerce.vo.JwtToken;
-import com.laishihui.ecommerce.vo.UsernameAndPassword;
+import com.laishishui.ecommerce.vo.JwtToken;
+import com.laishishui.ecommerce.vo.UsernameAndPassword;
 import com.laishishui.ecommerce.annotation.IgnoreResponseAdvice;
 import com.laishishui.ecommerce.service.IJWTService;
 import lombok.extern.slf4j.Slf4j;

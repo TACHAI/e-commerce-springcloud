@@ -1,7 +1,7 @@
 package com.laishishui.ecommerce.service.communication;
 
-import com.laishihui.ecommerce.vo.JwtToken;
-import com.laishihui.ecommerce.vo.UsernameAndPassword;
+import com.laishishui.ecommerce.vo.JwtToken;
+import com.laishishui.ecommerce.vo.UsernameAndPassword;
 import com.laishishui.ecommerce.service.communication.hystrix.AuthorityFeignClientFallback;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.RequestBody;

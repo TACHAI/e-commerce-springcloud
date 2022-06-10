@@ -1,12 +1,10 @@
 package com.laishishui.ecommerce.controller;
 
-import com.alibaba.fastjson.JSONObject;
-import com.laishihui.ecommerce.vo.JwtToken;
-import com.laishihui.ecommerce.vo.UsernameAndPassword;
+import com.laishishui.ecommerce.vo.JwtToken;
+import com.laishishui.ecommerce.vo.UsernameAndPassword;
 import com.laishishui.ecommerce.service.communication.AuthorityFeignClient;
 import com.laishishui.ecommerce.service.communication.UseRestTemplateService;
 import com.laishishui.ecommerce.service.communication.UseRibbonService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;

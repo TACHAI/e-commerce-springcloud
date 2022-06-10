@@ -30,7 +30,7 @@ public class DBDocTest {
 
     @Autowired
     private ApplicationContext applicationContext;
-
+    @Test
     public void buildDBDoc(){
         DataSource dataSourceMysql= applicationContext.getBean(DataSource.class);
 

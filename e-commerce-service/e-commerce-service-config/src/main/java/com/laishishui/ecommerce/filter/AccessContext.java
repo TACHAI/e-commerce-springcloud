@@ -1,6 +1,6 @@
 package com.laishishui.ecommerce.filter;
 
-import com.laishihui.ecommerce.vo.LoginUserInfo;
+import com.laishishui.ecommerce.vo.LoginUserInfo;
 
 /**
  * <h1>使用 ThreadLocal 去单独存储每一个线程携带的LoginUserInfo 信息</h1>

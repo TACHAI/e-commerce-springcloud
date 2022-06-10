@@ -6,7 +6,7 @@ package com.laishishui.ecommerce.advice;
  * Email tc1206966083@gmail.com
  */
 
-import com.laishihui.ecommerce.vo.CommonResponse;
+import com.laishishui.ecommerce.vo.CommonResponse;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;

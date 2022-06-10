@@ -1,4 +1,4 @@
-package com.laishihui.ecommerce.constant;
+package com.laishishui.ecommerce.constant;
 
 /**
  * <h1>通用模块常量定义</h1>

@@ -6,7 +6,7 @@ package com.laishishui.ecommerce.advice;
  * Email tc1206966083@gmail.com
  */
 
-import com.laishihui.ecommerce.vo.CommonResponse;
+import com.laishishui.ecommerce.vo.CommonResponse;
 import com.laishishui.ecommerce.annotation.IgnoreResponseAdvice;
 import org.springframework.core.MethodParameter;
 import org.springframework.http.MediaType;

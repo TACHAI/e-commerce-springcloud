@@ -3,4 +3,4 @@
  * gitHub https://github.com/TACHAI
  * Email tc1206966083@gmail.com
  */
-package com.laishihui.ecommerce;
+package com.laishishui.ecommerce;

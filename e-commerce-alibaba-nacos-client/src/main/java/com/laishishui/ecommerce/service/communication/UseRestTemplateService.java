@@ -1,9 +1,9 @@
 package com.laishishui.ecommerce.service.communication;
 
 import com.alibaba.fastjson.JSON;
-import com.laishihui.ecommerce.constant.CommonConstant;
-import com.laishihui.ecommerce.vo.JwtToken;
-import com.laishihui.ecommerce.vo.UsernameAndPassword;
+import com.laishishui.ecommerce.constant.CommonConstant;
+import com.laishishui.ecommerce.vo.JwtToken;
+import com.laishishui.ecommerce.vo.UsernameAndPassword;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.loadbalancer.LoadBalancerClient;

@@ -13,6 +13,9 @@
       </set>
     </option>
   </component>
+  <component name="ProjectPlainTextFileTypeManager">
+    <file url="file://$PROJECT_DIR$/e-commerce-authority-center/src/main/resources/mysql&#10;/laishishui_e_commerce_e-commerce-springcloud_1.0.0.html" />
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8.0_191" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>

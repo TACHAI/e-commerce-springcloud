@@ -1,14 +1,13 @@
 package com.laishishui.ecommerce.filter;
 
 import com.alibaba.fastjson.JSON;
-import com.laishihui.ecommerce.constant.CommonConstant;
-import com.laishihui.ecommerce.util.TokenParseUtil;
-import com.laishihui.ecommerce.vo.JwtToken;
-import com.laishihui.ecommerce.vo.LoginUserInfo;
-import com.laishihui.ecommerce.vo.UsernameAndPassword;
+import com.laishishui.ecommerce.constant.CommonConstant;
+import com.laishishui.ecommerce.util.TokenParseUtil;
+import com.laishishui.ecommerce.vo.JwtToken;
+import com.laishishui.ecommerce.vo.LoginUserInfo;
+import com.laishishui.ecommerce.vo.UsernameAndPassword;
 import com.laishishui.ecommerce.constant.GatewayConstant;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.loadbalancer.LoadBalancerClient;
 import org.springframework.cloud.gateway.filter.GatewayFilterChain;
