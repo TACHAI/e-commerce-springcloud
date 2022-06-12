@@ -17,6 +17,7 @@
         <module name="e-commerce-hystrix-dashboard" />
         <module name="e-commerce-goods-service" />
         <module name="e-commerce-alibaba-nacos-client" />
+        <module name="e-commerce-stream-client" />
       </profile>
     </annotationProcessing>
   </component>
@@ -34,6 +35,7 @@
       <module name="e-commerce-service" options="-parameters" />
       <module name="e-commerce-service-config" options="-parameters" />
       <module name="e-commerce-service-sdk" options="-parameters" />
+      <module name="e-commerce-stream-client" options="-parameters" />
     </option>
   </component>
 </project>

@@ -36,22 +36,22 @@ spring:
 
 
 ## Feign的相关配置
-#feign:
-#  # feign开启zip压缩
-#  compression:
-#    request:
-#      enabled: true
-#      mime-types: text/xml,application/xml,application/json
-#      min-request-size: 1024
-#    response:
-#      enabled: true
-#  # 禁用原生的http
-#  httpclient:
-#    enabled: false
-#  okhttp:
-#    enabled: true
-#  hystrix:
-#    enabled: true
+feign:
+  # feign开启zip压缩
+  compression:
+    request:
+      enabled: true
+      mime-types: text/xml,application/xml,application/json
+      min-request-size: 1024
+    response:
+      enabled: true
+  # 禁用原生的http
+  httpclient:
+    enabled: false
+  okhttp:
+    enabled: true
+  hystrix:
+    enabled: true
 # 暴露端点
 management:
   endpoints:

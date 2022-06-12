@@ -8,6 +8,8 @@ import org.springframework.cloud.netflix.hystrix.dashboard.EnableHystrixDashboar
 /**
  * <h1>hystrix dashboard入口</h1>
  * 127.0.0.1:9999/ecommerce-hystrix-dashboard/hystrix
+ *
+ * http://127.0.0.1:8000/ecommerce-nacos-client/actuator/hystrix.stream
  * @author tachai on 2022/1/31 11:34 下午
  * gitHub https://github.com/TACHAI
  * Email tc1206966083@gmail.com

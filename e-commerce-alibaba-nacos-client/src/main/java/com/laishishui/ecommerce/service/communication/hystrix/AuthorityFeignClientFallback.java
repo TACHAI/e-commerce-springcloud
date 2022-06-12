@@ -21,6 +21,6 @@ public class AuthorityFeignClientFallback implements AuthorityFeignClient {
 
         log.info("authority feign client get token by feign request error Hystrix Fallback:[{}]," +
                 JSON.toJSONString(usernameAndPassword));
-        return new JwtToken("laishishui");
+        return new JwtToken("laishishui1111");
     }
 }

@@ -1,5 +1,6 @@
 package com.laishishui.ecommerce.service.communication;
 
+import com.laishishui.ecommerce.service.communication.hystrix.AuthorityFeignClientFallbackFactory;
 import com.laishishui.ecommerce.vo.JwtToken;
 import com.laishishui.ecommerce.vo.UsernameAndPassword;
 import com.laishishui.ecommerce.service.communication.hystrix.AuthorityFeignClientFallback;
@@ -16,8 +17,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
  */
 @FeignClient(contextId = "AuthorityFeignClient",
         value = "e-commerce-authority-center",
-//        fallback = AuthorityFeignClientFallback.class
-        fallbackFactory = AuthorityFeignClientFallback.class
+        fallbackFactory = AuthorityFeignClientFallbackFactory.class
+        //        fallback = AuthorityFeignClientFallback.class
 )
 public interface AuthorityFeignClient {
 

@@ -58,6 +58,11 @@
             <groupId>io.github.openfeign</groupId>
             <artifactId>feign-okhttp</artifactId>
         </dependency>
+        <dependency>
+            <groupId>io.github.openfeign</groupId>
+            <artifactId>feign-gson</artifactId>
+            <version>11.0</version>
+        </dependency>
         <!--集成hystrix-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>

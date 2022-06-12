@@ -23,7 +23,7 @@ public class AuthorityFeignClientFallbackFactory implements FallbackFactory<Auth
         return new AuthorityFeignClient() {
             @Override
             public JwtToken getTokenByFegin(UsernameAndPassword usernameAndPassword) {
-                return new JwtToken("laishishui");
+                return new JwtToken("laishishui222");
             }
         };
     }
