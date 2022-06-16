@@ -20,7 +20,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
         contextId = "NotSecuredBalanceClient",
         value = "e-commerce-account-service"
 )
-public interface NoSecuredBalanceClient {
+public interface NotSecuredBalanceClient {
     @RequestMapping(
             value = "/ecommerce-account-service/balance/deduct-balance",
             method = RequestMethod.PUT
