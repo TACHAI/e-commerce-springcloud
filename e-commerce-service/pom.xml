@@ -21,6 +21,7 @@
         <module>e-commerce-account-service</module>
         <module>e-commerce-service-sdk</module>
         <module>e-commerce-goods-service</module>
+        <module>e-commerce-order-service</module>
     </modules>
 
 
@@ -46,6 +47,7 @@
             <artifactId>swagger-bootstrap-ui</artifactId>
             <version>1.9.3</version>
         </dependency>
+
     </dependencies>
 
 

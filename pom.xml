@@ -18,6 +18,8 @@
         <module>e-commerce-service</module>
         <module>e-commerce-hystrix-dashboard</module>
         <module>e-commerce-stream-client</module>
+        <module>e-commerce-order-service</module>
+        <module>e-commerce-service/e-commerce-order-service</module>
     </modules>
 
     <packaging>pom</packaging>
