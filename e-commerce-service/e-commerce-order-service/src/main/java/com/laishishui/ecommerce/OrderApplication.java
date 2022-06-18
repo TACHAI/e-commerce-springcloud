@@ -1,10 +1,12 @@
 package com.laishishui.ecommerce;
 
+import com.laishishui.ecommerce.conf.DataSourceProxyAutoConfiguration;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.openfeign.EnableFeignClients;
+import org.springframework.context.annotation.Import;
 import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 
 /**
@@ -18,7 +20,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 @EnableFeignClients
 @EnableDiscoveryClient
 @SpringBootApplication
-//@Import(DataSourceProxyAutoConfiguration.class)
+@Import(DataSourceProxyAutoConfiguration.class)
 public class OrderApplication {
 
 

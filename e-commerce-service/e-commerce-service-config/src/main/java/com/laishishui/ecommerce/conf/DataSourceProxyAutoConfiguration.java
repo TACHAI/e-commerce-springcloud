@@ -1,6 +1,13 @@
 package com.laishishui.ecommerce.conf;
 
+import com.zaxxer.hikari.HikariDataSource;
+import io.seata.rm.datasource.DataSourceProxy;
+import org.springframework.boot.autoconfigure.jdbc.DataSourceProperties;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Primary;
+
+import javax.sql.DataSource;
 
 /**
  * <h1>Seata 所需要的数据源代理</h1>

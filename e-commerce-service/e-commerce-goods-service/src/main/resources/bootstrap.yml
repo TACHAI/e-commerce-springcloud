@@ -23,21 +23,21 @@ spring:
       retries: 3
     consumer:
       auto-offset-reset: latest
-    sleuth:
-      sampler:
-        probability: 1.0 #采样比例，1.0表示 100%，默认是0.1
-    zipkin:
-      sender:
-        type: kafka #默认是 web
+  sleuth:
+    sampler:
+      probability: 1.0 #采样比例，1.0表示 100%，默认是0.1
+  zipkin:
+    sender:
+      type: kafka #默认是 web
       base-url: http://localhost:9411/
-    jpa:
-      show-sql: true
-      hibernate:
-        ddl-auto: none
-      properties:
-        hibernate.show_sql: true
-        hibernate.format_sql: true
-      open-in-view: false
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+    properties:
+      hibernate.show_sql: true
+      hibernate.format_sql: true
+    open-in-view: false
 
   datasource:
     # 数据源

@@ -11,12 +11,14 @@
         <module name="e-commerce-admin" />
         <module name="e-commerce-service-config" />
         <module name="e-commerce-gateway" />
+        <module name="e-commerce-logistics-services" />
         <module name="e-commerce-stream-client" />
         <module name="e-commerce-account-service" />
         <module name="e-commerce-authority-center" />
         <module name="e-commerce-mvc-config" />
         <module name="e-commerce-common" />
         <module name="e-commerce-hystrix-dashboard" />
+        <module name="e-commerce-sentinel-client" />
         <module name="e-commerce-goods-service" />
         <module name="e-commerce-alibaba-nacos-client" />
       </profile>
@@ -32,8 +34,10 @@
       <module name="e-commerce-gateway" options="-parameters" />
       <module name="e-commerce-goods-service" options="-parameters" />
       <module name="e-commerce-hystrix-dashboard" options="-parameters" />
+      <module name="e-commerce-logistics-services" options="-parameters" />
       <module name="e-commerce-mvc-config" options="-parameters" />
       <module name="e-commerce-order-service" options="-parameters" />
+      <module name="e-commerce-sentinel-client" options="-parameters" />
       <module name="e-commerce-service" options="-parameters" />
       <module name="e-commerce-service-config" options="-parameters" />
       <module name="e-commerce-service-sdk" options="-parameters" />

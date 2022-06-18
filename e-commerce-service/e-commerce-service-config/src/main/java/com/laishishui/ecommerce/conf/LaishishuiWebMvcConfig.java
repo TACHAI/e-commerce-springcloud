@@ -1,5 +1,6 @@
 package com.laishishui.ecommerce.conf;
 
+import com.alibaba.cloud.seata.web.SeataHandlerInterceptor;
 import com.laishishui.ecommerce.filter.LoginUserInfoInterceptor;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;

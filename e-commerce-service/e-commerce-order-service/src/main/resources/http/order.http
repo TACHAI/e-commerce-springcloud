@@ -1,0 +1,20 @@
+### 创建订单
+POST http://127.0.0.1:9001/imooc/ecommerce-order-service/order/create-order
+Content-Type: application/json
+Accept: application/json
+e-commerce-user: eyJhbGciOiJSUzI1NiJ9.eyJlLWNvbW1lcmNlLXVzZXIiOiJ7XCJpZFwiOjEwLFwidXNlcm5hbWVcIjpcIlFpbnlpQGltb29jLmNvbVwifSIsImp0aSI6ImU5OWYzYjdjLTA2YjYtNGQ1Zi1hODY3LWJlMzhjYjlkNDBmZCIsImV4cCI6MTYyODE3OTIwMH0.U9jXZoa9fdQMJQmujN4mkkbtN62cGVy26qhOq_x4QhU8qCqw_NLr2StdAOAAC_FGOF85DHpvDBHCzn9EDCeuq1tBqODjUaLLnWFtTj3oYYSpPZQTG-ZA9OLz8lG8EbcH3URxcaTMElyI8WKoIVccWIHivXTDgNDZOCs6Bir9bBvJJ1Vobgqnb1uV5S7wdHgh89e96-iBy9xCsoQovTcyEOqi8n5cH8cTjMb2XXjT83OhZC1oxhKhkNoTiDOq9VSaYOISQ_tv-XFTICEed4ondW9zfcrbAWdaHb1l8UT5o7nuQOwWkaMckDft9liuTvl6KAe8MjPN9exUqAI5tOC_fA
+
+{
+  "userAddress": 1,
+  "orderItems": [
+    {
+      "goodsId": 1,
+      "count": 5
+    }
+  ]
+}
+
+### 查询订单
+GET http://127.0.0.1:9001/imooc/ecommerce-order-service/order/order-detail?page=2
+Accept: application/json
+e-commerce-user: eyJhbGciOiJSUzI1NiJ9.eyJlLWNvbW1lcmNlLXVzZXIiOiJ7XCJpZFwiOjEwLFwidXNlcm5hbWVcIjpcIlFpbnlpQGltb29jLmNvbVwifSIsImp0aSI6ImU5OWYzYjdjLTA2YjYtNGQ1Zi1hODY3LWJlMzhjYjlkNDBmZCIsImV4cCI6MTYyODE3OTIwMH0.U9jXZoa9fdQMJQmujN4mkkbtN62cGVy26qhOq_x4QhU8qCqw_NLr2StdAOAAC_FGOF85DHpvDBHCzn9EDCeuq1tBqODjUaLLnWFtTj3oYYSpPZQTG-ZA9OLz8lG8EbcH3URxcaTMElyI8WKoIVccWIHivXTDgNDZOCs6Bir9bBvJJ1Vobgqnb1uV5S7wdHgh89e96-iBy9xCsoQovTcyEOqi8n5cH8cTjMb2XXjT83OhZC1oxhKhkNoTiDOq9VSaYOISQ_tv-XFTICEed4ondW9zfcrbAWdaHb1l8UT5o7nuQOwWkaMckDft9liuTvl6KAe8MjPN9exUqAI5tOC_fA
