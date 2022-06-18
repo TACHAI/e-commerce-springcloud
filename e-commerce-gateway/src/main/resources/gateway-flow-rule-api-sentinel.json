@@ -1,0 +1,14 @@
+[
+  {
+    "apiName": "nacos-client-api",
+    "predicateItems": [
+      {
+        "pattern": "/laishishui/ecommerce-nacos-client/nacos-client/project-config"
+      },
+      {
+        "pattern": "/laishishui/ecommerce-nacos-client/**",
+        "matchStrategy": 1
+      }
+    ]
+  }
+]

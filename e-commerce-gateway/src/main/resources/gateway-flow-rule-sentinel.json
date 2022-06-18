@@ -1,0 +1,14 @@
+[
+  {
+    "resource": "e-commerce-nacos-client",
+    "resourceMode": 0,
+    "count": 3,
+    "intervalSec": 60
+  },
+  {
+    "resource": "nacos-client-api",
+    "resourceMode": 1,
+    "count": 1,
+    "intervalSec": 60
+  }
+]
