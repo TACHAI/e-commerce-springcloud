@@ -20,7 +20,7 @@ spring:
           content-type: text/plain
     alibaba:
       seata:
-        tx-service-group: imooc-ecommerce # seata 全局事务分组
+        tx-service-group: laishishui-ecommerce # seata 全局事务分组
     nacos:
       discovery:
         enabled: true # 如果不想使用 Nacos 进行服务注册和发现, 设置为 false 即可
@@ -57,7 +57,7 @@ spring:
     open-in-view: false
   datasource:
     # 数据源
-    url: jdbc:mysql://127.0.0.1:3306/laishishui_e_commerce?autoReconnect=true&useUnicode=true
+    url: jdbc:mysql://127.0.0.1:3306/laishishui_e_commerce?autoReconnect=true&useUnicode=true&characterEncoding=utf8&useSSL=false
     username: root
     password: hzc778209
     type: com.zaxxer.hikari.HikariDataSource
@@ -70,7 +70,7 @@ spring:
       connection-timeout: 30000
       max-lifetime: 45000
       auto-commit: true
-      pool-name: LaishishuiEconmmerceHikariCP
+      pool-name: LaishishuiEcommerceHikariCP
 
 # feign 相关的配置
 feign:
@@ -81,7 +81,12 @@ feign:
       default:  # 全局的
         connectTimeout: 2000  # 默认的连接超时时间是 10s
         readTimeout: 5000
-
+seata:
+  enabled: true
+  client:
+    support:
+      spring:
+        datasource-autoproxy: false
 # 暴露端点
 management:
   endpoints:

@@ -16,7 +16,9 @@ spring:
         metadata:
           management:
             context-path: ${server.servlet.context-path}/actuator
-
+    alibaba:
+      seata:
+        tx-service-group: laishishui-ecommerce
   kafka:
     bootstrap-servers: 127.0.0.1:9092
     producer:
@@ -54,6 +56,12 @@ spring:
       max-lifetime: 45000
       auto-commit: true
       pool-name: LaishishuiEconmmerceHikariCP
+seata:
+  enabled: true
+  client:
+    support:
+      spring:
+        datasource-autoproxy: false
 
 # 暴露端点
 management:

@@ -16,6 +16,9 @@ spring:
         metadata:
           management:
             context-path: ${server.servlet.context-path}/actuator
+    alibaba:
+      seata:
+        tx-service-group: laishishui-ecommerce
 
   kafka:
     bootstrap-servers: 127.0.0.1:9092
@@ -62,6 +65,12 @@ spring:
     # password
     # 连接超时时间 单位是毫秒
     timeout: 10000
+seata:
+  enabled: true
+  client:
+    support:
+      spring:
+        datasource-autoproxy: false
 
 # 暴露端点
 management:

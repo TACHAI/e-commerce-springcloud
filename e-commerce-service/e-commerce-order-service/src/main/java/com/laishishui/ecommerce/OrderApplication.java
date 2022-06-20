@@ -16,10 +16,10 @@ import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
  * Email tc1206966083@gmail.com
  */
 @EnableJpaAuditing
-@EnableCircuitBreaker
-@EnableFeignClients
 @EnableDiscoveryClient
 @SpringBootApplication
+@EnableCircuitBreaker
+@EnableFeignClients
 @Import(DataSourceProxyAutoConfiguration.class)
 public class OrderApplication {
 
