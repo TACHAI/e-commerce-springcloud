@@ -65,12 +65,12 @@ spring:
     # password
     # 连接超时时间 单位是毫秒
     timeout: 10000
-seata:
-  enabled: true
-  client:
-    support:
-      spring:
-        datasource-autoproxy: false
+#seata:
+#  enabled: true
+#  client:
+#    support:
+#      spring:
+#        datasource-autoproxy: false
 
 # 暴露端点
 management:

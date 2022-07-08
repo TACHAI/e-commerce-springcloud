@@ -30,10 +30,10 @@ spring:
         metadata:
           management:
             context-path: ${server.servlet.context-path}/actuator
-    # 开启 ribbon 重试机制, 即获取服务失败是否从另外一个节点重试
-    loadbalancer:
-      retry:
-        enabled: true
+      # 开启 ribbon 重试机制, 即获取服务失败是否从另外一个节点重试
+      loadbalancer:
+        retry:
+          enabled: true
   kafka:
     bootstrap-servers: 127.0.0.1:9092
     producer:
@@ -81,12 +81,12 @@ feign:
       default:  # 全局的
         connectTimeout: 2000  # 默认的连接超时时间是 10s
         readTimeout: 5000
-seata:
-  enabled: true
-  client:
-    support:
-      spring:
-        datasource-autoproxy: false
+#seata:
+#  enabled: true
+#  client:
+#    support:
+#      spring:
+#        datasource-autoproxy: false
 # 暴露端点
 management:
   endpoints:

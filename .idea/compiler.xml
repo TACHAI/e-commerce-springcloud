@@ -17,6 +17,7 @@
         <module name="e-commerce-authority-center" />
         <module name="e-commerce-mvc-config" />
         <module name="e-commerce-common" />
+        <module name="e-commerce-demo" />
         <module name="e-commerce-hystrix-dashboard" />
         <module name="e-commerce-sentinel-client" />
         <module name="e-commerce-goods-service" />
@@ -31,6 +32,7 @@
       <module name="e-commerce-alibaba-nacos-client" options="-parameters" />
       <module name="e-commerce-authority-center" options="-parameters" />
       <module name="e-commerce-common" options="-parameters" />
+      <module name="e-commerce-demo" options="-parameters" />
       <module name="e-commerce-gateway" options="-parameters" />
       <module name="e-commerce-goods-service" options="-parameters" />
       <module name="e-commerce-hystrix-dashboard" options="-parameters" />

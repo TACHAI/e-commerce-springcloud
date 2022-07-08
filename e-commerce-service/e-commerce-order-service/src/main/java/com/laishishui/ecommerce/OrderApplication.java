@@ -14,17 +14,19 @@ import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
  * @author tachai on 2022/6/16 2:43 下午
  * gitHub https://github.com/TACHAI
  * Email tc1206966083@gmail.com
- */
+ **/
+
 @EnableJpaAuditing
-@EnableDiscoveryClient
 @SpringBootApplication
 @EnableCircuitBreaker
 @EnableFeignClients
+@EnableDiscoveryClient
 @Import(DataSourceProxyAutoConfiguration.class)
 public class OrderApplication {
 
 
     public static void main(String[] args) {
+
         SpringApplication.run(OrderApplication.class,args);
     }
 }

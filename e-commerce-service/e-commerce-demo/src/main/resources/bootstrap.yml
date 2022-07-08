@@ -1,0 +1,52 @@
+server:
+  port: 8006
+  servlet:
+    context-path: /ecommerce-demo
+
+spring:
+  application:
+    name: e-commerce-demo
+  cloud:
+    nacos:
+      # 服务注册发现
+      discovery:
+        enabled: true
+        server-addr: 127.0.0.1:8848
+        namespace: e829ba71-6d9c-4169-863a-2cc0b60cfbfc
+        metadata:
+          management:
+            context-path: ${server.servlet.context-path}/actuator
+    jpa:
+      show-sql: true
+      hibernate:
+        ddl-auto: none
+      properties:
+        hibernate.show_sql: true
+        hibernate.format_sql: true
+      open-in-view: false
+
+    datasource:
+      # 数据源
+      url: jdbc:mysql://127.0.0.1:3306/laishishui_e_commerce?autoReconnect=true&useUnicode=true
+      username: root
+      password: hzc778209
+      type: com.zaxxer.hikari.HikariDataSource
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      # 连接池
+      hikari:
+        maximum-pool-size: 8
+        minimum-idle: 4
+        idle-timeout: 30000
+        connection-timeout: 30000
+        max-lifetime: 45000
+        auto-commit: true
+        pool-name: LaishishuiEconmmerceHikariCP
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always
